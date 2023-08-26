@@ -3675,10 +3675,10 @@ partition(root);
 
 const arc = d3
     .arc()
-    .startAngle((d) => d.x0)
-    .endAngle((d) => d.x1)
-    .innerRadius((d) => d.y0)
-    .outerRadius((d) => d.y1);
+    .startAngle((d) => Math.max(0, Math.min(2 * Math.PI, d.x0)))
+    .endAngle((d) => Math.max(0, Math.min(2 * Math.PI, d.x1)))
+    .innerRadius((d) => (d.depth === 0 ? 0 : Math.max(0, d.y0 * 1)))
+    .outerRadius((d) => (d.depth === 0 ? radius * 0.1 : Math.max(0, d.y1 * 1)));
 
 const path = svg
     .selectAll("path")
@@ -3722,7 +3722,7 @@ function getFontSize(d) {
     const fontSizeScale = d3
         .scaleLinear()
         .domain([0, 0.5 * (d.y0 + d.y1)])
-        .range([8, 16]); // Adjust the font size range as needed
+        .range([10, 14]); // Adjust the font size range as needed
 
     const textWidth = getTextWidth(d.data.name, fontSizeScale(d.y1 - d.y0));
     const segmentAngle = d.x1 - d.x0;
@@ -3787,46 +3787,45 @@ function click(event, p) {
         }
 
         html = `
-            <div class="flex flex-col bg-white w-[343px] shadow overflow-hidden rounded-lg">
-                <div class="tooltip-header ">
-                    <h2>الموضوع: ${p.data.name}</h2>
-                </div>
-                <div class="tooltip-body">
-                    ${
-                        strategiesHtml
-                            ? `
-                        <div class="flex flex-col p-4">
-                            <div>
-                                <h3 class="font-semibold">الاستراتيجيات (${p.data.strategies.length}):</h3>
-                            </div>
-                            <ul>
-                                ${strategiesHtml}
-                            </ul>
+            <div class="tooltip-header">
+                <h2>الموضوع: ${p.data.name}</h2>
+            </div>
+            <div class="tooltip-body">
+                ${
+                    strategiesHtml
+                        ? `
+                    <div class="flex flex-col p-4">
+                        <div>
+                            <h3 class="font-semibold">الاستراتيجيات (${p.data.strategies.length}):</h3>
                         </div>
-                        `
-                            : ""
-                    }
-                    ${
-                        policiesHtml
-                            ? `
-                        <hr>
-                        <div class="flex flex-col p-4">
-                            <div>
-                                <h3 class="font-semibold">السياسات (${p.data.policies.length}):</h3>
-                            </div>
-                            <ul>
-                                ${policiesHtml}
-                            </ul>
-                        </div>
+                        <ul>
+                            ${strategiesHtml}
+                        </ul>
+                    </div>
                     `
-                            : ""
-                    }
-                </div>
+                        : ""
+                }
+                ${
+                    policiesHtml
+                        ? `
+                    <hr>
+                    <div class="flex flex-col p-4">
+                        <div>
+                            <h3 class="font-semibold">السياسات (${p.data.policies.length}):</h3>
+                        </div>
+                        <ul>
+                            ${policiesHtml}
+                        </ul>
+                    </div>
+                `
+                        : ""
+                }
             </div>
         `;
     }
 
     if (p.depth === 3) {
+        console.log(p);
         return;
     }
 
