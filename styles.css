@@ -34,13 +34,16 @@ text {
 }
 
 .tooltip {
+    width: 250px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: absolute;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 14px;
     border-radius: 5px;
-    pointer-events: none;
     opacity: 0;
     transition: opacity 0.2s;
 }
