@@ -3760,6 +3760,11 @@ function click(event, p) {
     }
 
     if (p.depth === 2) {
+
+        if (!p.data.name) {
+            return;
+        }
+
         let strategiesHtml = "";
         if (p.data.strategies?.length) {
             p.data.strategies.forEach((strategy, i) => {
