@@ -3741,28 +3741,29 @@ function getTextWidth(text, fontSize) {
 }
 
 function click(event, p) {
-    let html = '';
+    let html = "";
 
     if (p.depth === 0) return;
 
     if (p.depth === 1) {
         return;
     }
-    
-    if (p.depth === 2) {
 
-        let strategiesHtml = '';
+    if (p.depth === 2) {
+        let strategiesHtml = "";
         if (p.data.strategies?.length) {
             p.data.strategies.forEach((strategy, i) => {
                 strategiesHtml += `
                     <li>
-                        <p class="w-[300px] whitespace-normal">${i + 1}. ${strategy}</p>
+                        <p class="w-[300px] whitespace-normal">${
+                            i + 1
+                        }. ${strategy}</p>
                     </li>
                 `;
             });
         }
 
-        let policiesHtml = '';
+        let policiesHtml = "";
         if (p.data.policies?.length) {
             p.data.policies.forEach((policy, i) => {
                 policiesHtml += `
