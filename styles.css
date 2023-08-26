@@ -1,0 +1,34 @@
+body {
+	font-family: 'Cairo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#chart {
+    width: 1400px;
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+svg {
+    background-color: white;
+}
+
+path {
+    transition: opacity 0.1s, transform 0.1s;
+}
+
+path.highlight {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+text {
+    pointer-events: none;
+}
