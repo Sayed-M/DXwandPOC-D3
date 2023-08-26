@@ -1,3 +1,27 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
 body {
     font-family: "Cairo", sans-serif;
     display: flex;
@@ -5,6 +29,11 @@ body {
     align-items: center;
     margin: 0;
     background-color: #f0f0f0;
+}
+
+hr {
+    width: 100%;
+    border-bottom: 1px solid #dedede;
 }
 
 #chart {
@@ -34,16 +63,39 @@ text {
 }
 
 .tooltip {
-    width: 250px;
-    max-height: 400px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    overflow: hidden;
     position: absolute;
-    padding: 10px;
     background-color: white;
     color: black;
     font-size: 14px;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: opacity 0.2s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
+}
+
+.tooltip-header {
+    display: flex;
+    align-items: center;
+    background-color: #606164;
+    color: white;
+    padding: 16px;
+}
+
+.tooltip-header h2 {
+    font-size: 16px;
+}
+
+.tooltip-body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    max-height: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

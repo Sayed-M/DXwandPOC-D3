@@ -3788,10 +3788,10 @@ function click(event, p) {
 
         html = `
             <div class="flex flex-col bg-white w-[343px] shadow overflow-hidden rounded-lg">
-                <div class="flex items-center bg-[#606164] text-white p-4">
+                <div class="tooltip-header ">
                     <h2>الموضوع: ${p.data.name}</h2>
                 </div>
-                <div class="flex flex-col max-h-80 overflow-y-auto w-[343px]">
+                <div class="tooltip-body">
                     ${
                         strategiesHtml
                             ? `
