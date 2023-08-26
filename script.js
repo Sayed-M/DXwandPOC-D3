@@ -3746,7 +3746,7 @@ function closeTooltipOnClick(event) {
     const tooltip = document.getElementById("tooltip");
 
     if (!tooltip.contains(event.target)) {
-        tooltip.style.opacity = 0;
+        tooltip.style.display = "none";
     }
 }
 
@@ -3834,11 +3834,11 @@ function click(event, p) {
         return;
     }
 
-    tooltip.html(html); // Customize your tooltip content
+    tooltip.html(html);
     tooltip
         .style("left", `${event.pageX - 171}px`)
         .style("top", `${event.pageY + 20}px`)
-        .style("opacity", 1);
+        .style("display", "flex");
     event.stopPropagation();
 }
 
