@@ -4,7 +4,7 @@ const data = {
         {
             name: "الاقتصاد",
             itemStyle: {
-                color: "#D0D1D1",
+                color: "#E6E6E6",
                 opacity: 1,
             },
             level: 1,
@@ -20,7 +20,7 @@ const data = {
                 {
                     name: "العقارات",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -110,7 +110,7 @@ const data = {
                         {
                             name: "تنظيم حاضنات الابتكا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -127,7 +127,7 @@ const data = {
                         {
                             name: "تعديل مسميات أنواع ا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -144,7 +144,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (7) ل...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -163,7 +163,7 @@ const data = {
                 {
                     name: "الملكية الأجنبية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -349,7 +349,7 @@ const data = {
                         {
                             name: "ضوابط التجاوز عن الم...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -366,7 +366,7 @@ const data = {
                         {
                             name: "قانون رقم (7) لسنة 2...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -383,7 +383,7 @@ const data = {
                         {
                             name: "قانون رقم (10) لسنة ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -400,7 +400,7 @@ const data = {
                         {
                             name: "تعديل القرار الإداري...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -417,7 +417,7 @@ const data = {
                         {
                             name: "تنظيم تصاريح التجارة...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -434,7 +434,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (209)...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -451,7 +451,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (7) ل...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -470,7 +470,7 @@ const data = {
                 {
                     name: "حماية المستهلك",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -559,7 +559,7 @@ const data = {
                         {
                             name: "ضوابط التجاوز عن الم...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -576,7 +576,7 @@ const data = {
                         {
                             name: "قانون رقم (10) لسنة ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -593,7 +593,7 @@ const data = {
                         {
                             name: "تنظيم تصاريح التجارة...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -612,7 +612,7 @@ const data = {
                 {
                     name: "الشراكة بين القطاعين العام والخاص",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -655,7 +655,7 @@ const data = {
                         {
                             name: "قانون رقم (1) لسنة 2...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -674,7 +674,7 @@ const data = {
                 {
                     name: "تنمية الاستثمار المحلي",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -717,7 +717,7 @@ const data = {
                         {
                             name: "قانون رقم (1) لسنة 2...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -736,7 +736,7 @@ const data = {
                 {
                     name: "التوظيف",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -825,7 +825,7 @@ const data = {
                         {
                             name: "قانون رقم (16) لسنة ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -842,7 +842,7 @@ const data = {
                         {
                             name: "قانون رقم (8) لسنة 2...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -859,7 +859,7 @@ const data = {
                         {
                             name: "تعديل مسميات أنواع ا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -878,7 +878,7 @@ const data = {
                 {
                     name: "البطالة",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -919,7 +919,7 @@ const data = {
                         {
                             name: "قانون رقم (16) لسنة ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -938,7 +938,7 @@ const data = {
                 {
                     name: "النمو الاقتصادي",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -982,7 +982,7 @@ const data = {
                         {
                             name: "قانون رقم (8) لسنة 2...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1001,7 +1001,7 @@ const data = {
                 {
                     name: "التصنيع",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1039,7 +1039,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (70) ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1058,7 +1058,7 @@ const data = {
                 {
                     name: "الطاقة",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1096,7 +1096,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (70) ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1115,7 +1115,7 @@ const data = {
                 {
                     name: "التراخيص التجارية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1157,7 +1157,7 @@ const data = {
                         {
                             name: "إنشاء مركز أبو ظبي ل...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1176,7 +1176,7 @@ const data = {
                 {
                     name: "تنظيم الأنشطة الاقتصادية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1218,7 +1218,7 @@ const data = {
                         {
                             name: "إنشاء مركز أبو ظبي ل...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1237,7 +1237,7 @@ const data = {
                 {
                     name: "تصنيف الأنشطة والتراخيص الاقتصادية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1280,7 +1280,7 @@ const data = {
                         {
                             name: "قرار رئيس المجلس الت...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1299,7 +1299,7 @@ const data = {
                 {
                     name: "تنمية وتطوير ودعم قطاع الصناعة",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1342,7 +1342,7 @@ const data = {
                         {
                             name: "قرار رئيس المجلس الت...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1361,7 +1361,7 @@ const data = {
                 {
                     name: "براءات الاختراع",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1404,7 +1404,7 @@ const data = {
                         {
                             name: "قرار رئيس المجلس الت...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1423,7 +1423,7 @@ const data = {
                 {
                     name: "تنمية الاستثمار",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1467,7 +1467,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (212)...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1486,7 +1486,7 @@ const data = {
                 {
                     name: "التجارة الدولية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1530,7 +1530,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (212)...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1549,7 +1549,7 @@ const data = {
                 {
                     name: "جداول العمل",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1593,7 +1593,7 @@ const data = {
                         {
                             name: "تعميم رقم 11/2021 بش...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1612,7 +1612,7 @@ const data = {
                 {
                     name: "الاقتصاد الرقمي",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -1964,7 +1964,7 @@ const data = {
                         {
                             name: "تعميم رقم 11/2021 بش...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1981,7 +1981,7 @@ const data = {
                         {
                             name: "سياسة تحقيق الاكتفاء...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -1998,7 +1998,7 @@ const data = {
                         {
                             name: "تنظيم خدمات النقل وا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2015,7 +2015,7 @@ const data = {
                         {
                             name: "تعميم بشأن الاندية ا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2032,7 +2032,7 @@ const data = {
                         {
                             name: "تنظيم خدمات تنظيم ال...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2049,7 +2049,7 @@ const data = {
                         {
                             name: "قرار المجلس التنفيذي...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2066,7 +2066,7 @@ const data = {
                         {
                             name: "سياسة استخدام برامج ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2083,7 +2083,7 @@ const data = {
                         {
                             name: "تنظيم الشراكة بين ال...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2100,7 +2100,7 @@ const data = {
                         {
                             name: "تنظيم الشراكة بين ال...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2117,7 +2117,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (219)...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2134,7 +2134,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (352)...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2151,7 +2151,7 @@ const data = {
                         {
                             name: "تنظيم ترخيص حاضنات ا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2168,7 +2168,7 @@ const data = {
                         {
                             name: "تعديل رسوم التراخيص ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2185,7 +2185,7 @@ const data = {
                         {
                             name: "منح تراخيص للشركات ا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2204,7 +2204,7 @@ const data = {
                 {
                     name: "النفايات",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2242,7 +2242,7 @@ const data = {
                         {
                             name: "سياسة الاستدامة في ا...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2261,7 +2261,7 @@ const data = {
                 {
                     name: "اللغة العربية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2304,7 +2304,7 @@ const data = {
                         {
                             name: "تطبيق اللغة العربية ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2323,7 +2323,7 @@ const data = {
                 {
                     name: "الخدمات الاقتصادية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2366,7 +2366,7 @@ const data = {
                         {
                             name: "تطبيق اللغة العربية ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2385,7 +2385,7 @@ const data = {
                 {
                     name: "التجارة",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2443,7 +2443,7 @@ const data = {
                         {
                             name: "تعميم بشأن خدمات اصد...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2460,7 +2460,7 @@ const data = {
                         {
                             name: "منح تراخيص تجارية لأ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2479,7 +2479,7 @@ const data = {
                 {
                     name: "الخدمات",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2517,7 +2517,7 @@ const data = {
                         {
                             name: "تعميم بشأن خدمات اصد...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2536,7 +2536,7 @@ const data = {
                 {
                     name: "التصاريح",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2576,7 +2576,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (348/...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2595,7 +2595,7 @@ const data = {
                 {
                     name: "الإعلانات",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2635,7 +2635,7 @@ const data = {
                         {
                             name: "قرار إداري رقم (348/...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2654,7 +2654,7 @@ const data = {
                 {
                     name: "المصانع المتعثرة",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2698,7 +2698,7 @@ const data = {
                         {
                             name: "دعم المنشآت الصناعية...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2717,7 +2717,7 @@ const data = {
                 {
                     name: "التنافسية الصناعية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2761,7 +2761,7 @@ const data = {
                         {
                             name: "دعم المنشآت الصناعية...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2780,7 +2780,7 @@ const data = {
                 {
                     name: "التكتلات الاقتصادية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2824,7 +2824,7 @@ const data = {
                         {
                             name: "تنظيم الشراكة بين ال...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2843,7 +2843,7 @@ const data = {
                 {
                     name: "المحامون",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2887,7 +2887,7 @@ const data = {
                         {
                             name: "تنظيم عمل موثق عقود ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2906,7 +2906,7 @@ const data = {
                 {
                     name: "الشركات التجارية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -2947,7 +2947,7 @@ const data = {
                         {
                             name: "تنظيم آلية ضبط السلع...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -2966,7 +2966,7 @@ const data = {
                 {
                     name: "العلامات التجارية",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -3007,7 +3007,7 @@ const data = {
                         {
                             name: "تنظيم آلية ضبط السلع...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -3026,7 +3026,7 @@ const data = {
                 {
                     name: "الزراعة",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -3065,7 +3065,7 @@ const data = {
                         {
                             name: "منح تراخيص تجارية لأ...",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -3347,7 +3347,7 @@ const data = {
         {
             name: "مستقبل الحكومة",
             itemStyle: {
-                color: "#D0D1D1",
+                color: "#E6E6E6",
                 opacity: 1,
             },
             level: 1,
@@ -3363,7 +3363,7 @@ const data = {
                 {
                     name: "",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -3386,7 +3386,7 @@ const data = {
                         {
                             name: "",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -3527,7 +3527,7 @@ const data = {
         {
             name: "النمط المعيشي",
             itemStyle: {
-                color: "#D0D1D1",
+                color: "#E6E6E6",
                 opacity: 1,
             },
             level: 1,
@@ -3543,7 +3543,7 @@ const data = {
                 {
                     name: "",
                     itemStyle: {
-                        color: "#D0D1D1",
+                        color: "#E6E6E6",
                         opacity: 0.7,
                     },
                     level: 2,
@@ -3566,7 +3566,7 @@ const data = {
                         {
                             name: "",
                             itemStyle: {
-                                color: "#D0D1D1",
+                                color: "#E6E6E6",
                                 opacity: 0.5,
                             },
                             level: 3,
@@ -3716,20 +3716,20 @@ svg.selectAll("text")
     .attr("dy", "0.35em")
     .attr("text-anchor", (d) => "middle")
     .style("font-size", (d) => {
-        if (d.depth === 0) {
-            return '16px'
-        }
         return getFontSize(d)
     })
     .text((d) => d.data.name);
 
 function getFontSize(d) {
+    if (d.depth === 0) {
+        return '16px'
+    }
     const fontSizeScale = d3
         .scaleLinear()
         .domain([0, 0.5 * (d.y0 + d.y1)])
         .range([10, 14]); // Adjust the font size range as needed
 
-    const textWidth = getTextWidth(d.data.name, fontSizeScale(d.y1 - d.y0));
+    const textWidth = getTextWidth(d, fontSizeScale(d.y1 - d.y0));
     const segmentAngle = d.x1 - d.x0;
     const segmentRadius = (d.y0 + d.y1) / 2;
 
@@ -3740,7 +3740,8 @@ function getFontSize(d) {
     return `${fontSizeScale(d.y1 - d.y0)}px`;
 }
 
-function getTextWidth(text, fontSize) {
+function getTextWidth(d, fontSize) {
+    const text = d.data.name;
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
     context.font = `${fontSize}px Arial`;
