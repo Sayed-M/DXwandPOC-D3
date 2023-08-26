@@ -3667,6 +3667,7 @@ const color = d3.scaleOrdinal(d3.schemeCategory10);
 
 const partition = d3.partition().size([2 * Math.PI, radius]);
 
+const tooltipWrapper = d3.select("#tooltip-wrapper");
 const tooltip = d3.select("#tooltip");
 
 const root = d3.hierarchy(data).sum((d) => d.value);
@@ -3749,9 +3750,11 @@ function getTextWidth(d, fontSize) {
 }
 
 function closeTooltipOnClick(event) {
+    const tooltipWrapper = document.getElementById("tooltip-wrapper");
     const tooltip = document.getElementById("tooltip");
 
     if (!tooltip.contains(event.target)) {
+        tooltipWrapper.style.display = "none";
         tooltip.style.display = "none";
     }
 }
@@ -3841,6 +3844,7 @@ function click(event, p) {
     }
 
     tooltip.html(html);
+    tooltipWrapper.style("display", "block");
     tooltip
         .style("left", `${event.pageX - 171}px`)
         .style("top", `${event.pageY + 20}px`)
