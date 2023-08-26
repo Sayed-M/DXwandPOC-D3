@@ -3723,12 +3723,12 @@ svg.selectAll("text")
 
 function getFontSize(d) {
     if (d.depth === 0) {
-        return '16px'
+        return '14px'
     }
     const fontSizeScale = d3
         .scaleLinear()
         .domain([0, 0.5 * (d.y0 + d.y1)])
-        .range([10, 14]); // Adjust the font size range as needed
+        .range([12, 14]); // Adjust the font size range as needed
 
     const textWidth = getTextWidth(d, fontSizeScale(d.y1 - d.y0));
     const segmentAngle = d.x1 - d.x0;
@@ -3863,6 +3863,15 @@ function mouseover(event, p) {
         .style("fill", (d) =>
             isAncestor(p, d) || isAncestor(d, p) ? "black" : "#aaa"
         );
+
+    if (p.depth !== 0) {
+        svg.selectAll("text")
+        .transition()
+        .duration(100)
+        .style("font-size", (d) =>
+            isAncestor(p, d) || isAncestor(d, p) ? "13" : "12"
+        );
+    }
 
     path.filter((d) => isAncestor(p, d) || isAncestor(d, p)).classed(
         "highlight",
