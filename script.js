@@ -3742,6 +3742,12 @@ function getTextWidth(text, fontSize) {
 
 function click(event, p) {
     let html = '';
+
+    if (p.depth === 0) return;
+
+    if (p.depth === 1) {
+        return;
+    }
     
     if (p.depth === 2) {
 
@@ -3807,6 +3813,10 @@ function click(event, p) {
                 </div>
             </div>
         `;
+    }
+
+    if (p.depth === 3) {
+        return;
     }
 
     tooltip.html(html); // Customize your tooltip content
