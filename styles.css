@@ -63,7 +63,7 @@ svg {
 }
 
 path {
-    transition: opacity 0.1s, transform 0.1s;
+    transition: opacity 0.1s, transform 0.1s, filter 0.2s;
 }
 
 path.highlight {

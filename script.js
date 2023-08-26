@@ -3669,7 +3669,8 @@ function click(event, p) {
 function mouseover(event, p) {
     path.transition().style("opacity", (d) =>
         isAncestor(p, d) || isAncestor(d, p) ? 1 : 0.3
-    );
+    ).style("transform", d => isAncestor(p, d) || isAncestor(d, p) ? "scale(1.03) rotate(0.5deg)" : "scale(1) rotate(0deg)")
+    .style("filter", d => isAncestor(p, d) || isAncestor(d, p) ? "drop-shadow(0 0 0px rgba(0, 0, 0, 0.5))" : "none")
 
     svg.selectAll("text")
         .transition()
@@ -3694,7 +3695,8 @@ function mouseover(event, p) {
 }
 
 function mouseout() {
-    path.transition().style("opacity", 1);
+    path.transition().style("opacity", 1).style("transform", "scale(1) rotate(0deg)")
+    .style("filter", "none");
     path.classed("highlight", false);
 
     svg.selectAll("text").transition().duration(100).style("fill", "black");
