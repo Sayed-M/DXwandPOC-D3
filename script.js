@@ -3836,8 +3836,8 @@ function click(event, p) {
 
     tooltip.html(html); // Customize your tooltip content
     tooltip
-        .style("left", `${event.pageX}px`)
-        .style("top", `${event.pageY}px`)
+        .style("left", `${event.pageX - 171}px`)
+        .style("top", `${event.pageY + 20}px`)
         .style("opacity", 1);
     event.stopPropagation();
 }
