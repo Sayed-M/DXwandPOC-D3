@@ -3741,7 +3741,75 @@ function getTextWidth(text, fontSize) {
 }
 
 function click(event, p) {
-    tooltip.html(`<p>${p.data.name}</p>`); // Customize your tooltip content
+    let html = '';
+    
+    if (p.depth === 2) {
+
+        let strategiesHtml = '';
+        if (p.data.strategies?.length) {
+            p.data.strategies.forEach((strategy, i) => {
+                strategiesHtml += `
+                    <li>
+                        <p class="w-[300px] whitespace-normal">${i + 1}. ${strategy}</p>
+                    </li>
+                `;
+            });
+        }
+
+        let policiesHtml = '';
+        if (p.data.policies?.length) {
+            p.data.policies.forEach((policy, i) => {
+                policiesHtml += `
+                    <li>
+                        <p class="w-[300px] whitespace-normal">${i + 1}. ${
+                    policy.policy_name
+                }</p>
+                    </li>
+                `;
+            });
+        }
+
+        html = `
+            <div class="flex flex-col bg-white w-[343px] shadow overflow-hidden rounded-lg">
+                <div class="flex items-center bg-[#606164] text-white p-4">
+                    <h2>الموضوع: ${p.data.name}</h2>
+                </div>
+                <div class="flex flex-col max-h-80 overflow-y-auto w-[343px]">
+                    ${
+                        strategiesHtml
+                            ? `
+                        <div class="flex flex-col p-4">
+                            <div>
+                                <h3 class="font-semibold">الاستراتيجيات (${p.data.strategies.length}):</h3>
+                            </div>
+                            <ul>
+                                ${strategiesHtml}
+                            </ul>
+                        </div>
+                        `
+                            : ""
+                    }
+                    ${
+                        policiesHtml
+                            ? `
+                        <hr>
+                        <div class="flex flex-col p-4">
+                            <div>
+                                <h3 class="font-semibold">السياسات (${p.data.policies.length}):</h3>
+                            </div>
+                            <ul>
+                                ${policiesHtml}
+                            </ul>
+                        </div>
+                    `
+                            : ""
+                    }
+                </div>
+            </div>
+        `;
+    }
+
+    tooltip.html(html); // Customize your tooltip content
     tooltip
         .style("left", `${event.pageX}px`)
         .style("top", `${event.pageY}px`)
