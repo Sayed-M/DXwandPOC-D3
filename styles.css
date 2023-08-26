@@ -1,5 +1,5 @@
 body {
-	font-family: 'Cairo', sans-serif;
+    font-family: "Cairo", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +31,16 @@ path.highlight {
 
 text {
     pointer-events: none;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
 }

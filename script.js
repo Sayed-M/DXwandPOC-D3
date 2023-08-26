@@ -3667,6 +3667,8 @@ const color = d3.scaleOrdinal(d3.schemeCategory10);
 
 const partition = d3.partition().size([2 * Math.PI, radius]);
 
+const tooltip = d3.select("#tooltip");
+
 const root = d3.hierarchy(data).sum((d) => d.value);
 
 partition(root);
@@ -3689,7 +3691,7 @@ const path = svg
     )
     .style("opacity", 1); // Initially set full opacity
 
-path.on("mouseover", mouseover).on("mouseout", mouseout);
+path.on("click", click).on("mouseover", mouseover).on("mouseout", mouseout);
 
 svg.selectAll("text")
     .data(root.descendants())
@@ -3738,11 +3740,18 @@ function getTextWidth(text, fontSize) {
     return context.measureText(text).width;
 }
 
+function click(event, p) {
+    tooltip.html(`<p>${p.data.name}</p>`); // Customize your tooltip content
+    tooltip
+        .style("left", `${event.pageX}px`)
+        .style("top", `${event.pageY}px`)
+        .style("opacity", 1);
+}
+
 function mouseover(event, p) {
-    path.transition()
-        .style("opacity", (d) =>
-            isAncestor(p, d) || isAncestor(d, p) ? 1 : 0.3
-        );
+    path.transition().style("opacity", (d) =>
+        isAncestor(p, d) || isAncestor(d, p) ? 1 : 0.3
+    );
 
     svg.selectAll("text")
         .transition()
