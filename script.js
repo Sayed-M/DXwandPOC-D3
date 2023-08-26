@@ -3691,6 +3691,8 @@ const path = svg
     )
     .style("opacity", 1); // Initially set full opacity
 
+document.addEventListener("click", closeTooltipOnClick);
+
 path.on("click", click).on("mouseover", mouseover).on("mouseout", mouseout);
 
 svg.selectAll("text")
@@ -3738,6 +3740,14 @@ function getTextWidth(text, fontSize) {
     const context = canvas.getContext("2d");
     context.font = `${fontSize}px Arial`;
     return context.measureText(text).width;
+}
+
+function closeTooltipOnClick(event) {
+    const tooltip = document.getElementById("tooltip");
+
+    if (!tooltip.contains(event.target)) {
+        tooltip.style.opacity = 0;
+    }
 }
 
 function click(event, p) {
@@ -3825,6 +3835,7 @@ function click(event, p) {
         .style("left", `${event.pageX}px`)
         .style("top", `${event.pageY}px`)
         .style("opacity", 1);
+    event.stopPropagation();
 }
 
 function mouseover(event, p) {
