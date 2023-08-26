@@ -3677,8 +3677,8 @@ const arc = d3
     .arc()
     .startAngle((d) => Math.max(0, Math.min(2 * Math.PI, d.x0)))
     .endAngle((d) => Math.max(0, Math.min(2 * Math.PI, d.x1)))
-    .innerRadius((d) => (d.depth === 0 ? 0 : Math.max(0, d.y0 * 1)))
-    .outerRadius((d) => (d.depth === 0 ? radius * 0.1 : Math.max(0, d.y1 * 1)));
+    .innerRadius((d) => (d.depth === 0 ? 0 : Math.max(0, d.y0) - 100))
+    .outerRadius((d) => (d.depth === 0 ? radius * 0.1 : Math.max(0, d.y1) - 100));
 
 const path = svg
     .selectAll("path")
@@ -3707,7 +3707,7 @@ svg.selectAll("text")
                 return `translate(0, 0)`; // Center the root text
             }
             const x = (((d.x0 + d.x1) / 2) * 180) / Math.PI;
-            const y = (d.y0 + d.y1) / 2;
+            const y = ((d.y0 + d.y1) / 2) - 100;
             return `rotate(${x - 90}) translate(${y},0) rotate(${
                 x < 180 ? 0 : 180
             })`;
@@ -3715,7 +3715,12 @@ svg.selectAll("text")
     )
     .attr("dy", "0.35em")
     .attr("text-anchor", (d) => "middle")
-    .style("font-size", (d) => getFontSize(d))
+    .style("font-size", (d) => {
+        if (d.depth === 0) {
+            return '16px'
+        }
+        return getFontSize(d)
+    })
     .text((d) => d.data.name);
 
 function getFontSize(d) {
