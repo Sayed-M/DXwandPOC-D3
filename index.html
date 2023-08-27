@@ -13,8 +13,8 @@
         <div class="chart-wrapper">
             <div id="chart"></div>
         </div>
-        <div id="tooltip-wrapper" class="tooltip-wrapper">
-            <div id="tooltip" class="tooltip"></div>
+        <div id="tooltip-wrapper" class="fixed top-0 bottom-0 left-0 right-0 w-screen h-screen overflow-auto z-10">
+            <div id="tooltip" class="flex flex-col w-[343px] overflow-hidden absolute bg-white text-black text-sm rounded-lg shadow z-20"></div>
         </div>
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="script.js"></script>

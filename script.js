@@ -3593,7 +3593,7 @@ function click(event, p) {
             p.data.strategies.forEach((strategy, i) => {
                 strategiesHtml += `
                     <li>
-                        <p class="w-[300px] whitespace-normal">${
+                        <p class="max-w-[300px] whitespace-break-spaces">${
                             i + 1
                         }. ${strategy}</p>
                     </li>
@@ -3606,7 +3606,7 @@ function click(event, p) {
             p.data.policies.forEach((policy, i) => {
                 policiesHtml += `
                     <li>
-                        <p class="w-[300px] whitespace-normal">${i + 1}. ${
+                        <p class="max-w-[300px] whitespace-break-spaces">${i + 1}. ${
                     policy.policy_name
                 }</p>
                     </li>
@@ -3615,10 +3615,10 @@ function click(event, p) {
         }
 
         html = `
-            <div class="tooltip-header">
-                <h2>الموضوع: ${p.data.name}</h2>
+            <div class="flex items-center bg-[#606164] text-white p-4">
+                <h2 class="text-base">الموضوع: ${p.data.name}</h2>
             </div>
-            <div class="tooltip-body">
+            <div class="flex flex-col bg-white text-black p-4 max-h-[320px] overflow-x-hidden overflow-y-auto ">
                 ${
                     strategiesHtml
                         ? `
