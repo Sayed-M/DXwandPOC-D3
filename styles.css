@@ -623,6 +623,10 @@ video {
 .clear-none {
   clear: none;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1972,11 +1976,7 @@ text {
 
 @media(max-width: 992px) {
     .tooltip {
-        position: fixed;
         top: 40px !important;
-        left: 0px !important;
-        right: 0px !important;
-        margin: 0 auto;
     }
 }
 
@@ -2048,6 +2048,21 @@ text {
 
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:left-auto {
+    left: auto;
+  }
+
+  .lg\:right-auto {
+    right: auto;
   }
 }
 
