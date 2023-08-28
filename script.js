@@ -3477,8 +3477,6 @@ const svg = d3
         `translate(${width / 2 + padding},${height / 2 + padding})`
     );
 
-const color = d3.scaleOrdinal(d3.schemeCategory10);
-
 const partition = d3.partition().size([2 * Math.PI, radius]);
 
 const tooltipWrapper = d3.select("#tooltip-wrapper");
