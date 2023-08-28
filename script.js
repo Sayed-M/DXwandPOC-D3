@@ -3493,7 +3493,9 @@ const arc = d3
     .startAngle((d) => Math.max(0, Math.min(2 * Math.PI, d.x0)))
     .endAngle((d) => Math.max(0, Math.min(2 * Math.PI, d.x1)))
     .innerRadius((d) => (d.depth === 0 ? 0 : Math.max(0, d.y0) - 100))
-    .outerRadius((d) => (d.depth === 0 ? radius * 0.1 : Math.max(0, d.y1) - 100));
+    .outerRadius((d) =>
+        d.depth === 0 ? radius * 0.1 : Math.max(0, d.y1) - 100
+    );
 
 const path = svg
     .selectAll("path")
@@ -3522,7 +3524,7 @@ svg.selectAll("text")
                 return `translate(0, 0)`; // Center the root text
             }
             const x = (((d.x0 + d.x1) / 2) * 180) / Math.PI;
-            const y = ((d.y0 + d.y1) / 2) - 100;
+            const y = (d.y0 + d.y1) / 2 - 100;
             return `rotate(${x - 90}) translate(${y},0) rotate(${
                 x < 180 ? 0 : 180
             })`;
@@ -3531,13 +3533,13 @@ svg.selectAll("text")
     .attr("dy", "0.35em")
     .attr("text-anchor", (d) => "middle")
     .style("font-size", (d) => {
-        return getFontSize(d)
+        return getFontSize(d);
     })
     .text((d) => d.data.name);
 
 function getFontSize(d) {
     if (d.depth === 0) {
-        return '14px'
+        return "14px";
     }
     const fontSizeScale = d3
         .scaleLinear()
@@ -3583,7 +3585,6 @@ function click(event, p) {
     }
 
     if (p.depth === 2) {
-
         if (!p.data.name) {
             return;
         }
@@ -3667,10 +3668,20 @@ function click(event, p) {
 }
 
 function mouseover(event, p) {
-    path.transition().style("opacity", (d) =>
-        isAncestor(p, d) || isAncestor(d, p) ? 1 : 0.3
-    ).style("transform", d => isAncestor(p, d) || isAncestor(d, p) ? "scale(1.03) rotate(0.5deg)" : "scale(1) rotate(0deg)")
-    .style("filter", d => isAncestor(p, d) || isAncestor(d, p) ? "drop-shadow(0 0 0px rgba(0, 0, 0, 0.5))" : "none")
+    path.transition()
+        .style("opacity", (d) =>
+            isAncestor(p, d) || isAncestor(d, p) ? 1 : 0.3
+        )
+        .style("transform", (d) =>
+            isAncestor(p, d) || isAncestor(d, p)
+                ? "scale(1.03) rotate(0.5deg)"
+                : "scale(1) rotate(0deg)"
+        )
+        .style("filter", (d) =>
+            isAncestor(p, d) || isAncestor(d, p)
+                ? "drop-shadow(0 0 0px rgba(0, 0, 0, 0.5))"
+                : "none"
+        );
 
     svg.selectAll("text")
         .transition()
@@ -3681,11 +3692,11 @@ function mouseover(event, p) {
 
     if (p.depth !== 0) {
         svg.selectAll("text")
-        .transition()
-        .duration(100)
-        .style("font-size", (d) =>
-            isAncestor(p, d) || isAncestor(d, p) ? "13" : "12"
-        );
+            .transition()
+            .duration(100)
+            .style("font-size", (d) =>
+                isAncestor(p, d) || isAncestor(d, p) ? "13" : "12"
+            );
     }
 
     path.filter((d) => isAncestor(p, d) || isAncestor(d, p)).classed(
@@ -3695,8 +3706,10 @@ function mouseover(event, p) {
 }
 
 function mouseout() {
-    path.transition().style("opacity", 1).style("transform", "scale(1) rotate(0deg)")
-    .style("filter", "none");
+    path.transition()
+        .style("opacity", 1)
+        .style("transform", "scale(1) rotate(0deg)")
+        .style("filter", "none");
     path.classed("highlight", false);
 
     svg.selectAll("text").transition().duration(100).style("fill", "black");
